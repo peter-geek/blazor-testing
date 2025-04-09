@@ -1,0 +1,10 @@
+@page "/catalogue"
+@using BlazorApp1.Components.Blocks
+
+<PageTitle>SurePay Limited Product Catalogue</PageTitle>
+
+<div class="max-w-[800px] mx-auto flex flex-wrap">
+    @for (int i = 1; i <= 8; i++) {
+        <ProductComponent productName=@($"product {i}") />
+    }
+</div>
